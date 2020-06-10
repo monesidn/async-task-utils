@@ -1,0 +1,1 @@
+This repo contains a few async related tool that I'm using in some of my project. Maybe in the near future I'll turn it into a full fledged library.

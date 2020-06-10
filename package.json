@@ -1,0 +1,27 @@
+{
+  "name": "async-tasks-utils",
+  "version": "0.0.1",
+  "description": "A collection of utilities to manage async tasks.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand",
+    "test": "jest",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node dist/index.js",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "author": "Daniele Monesi",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "jest": "^26.0.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "eventemitter3": "^4.0.4"
+  }
+}
